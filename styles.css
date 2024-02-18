@@ -17,6 +17,9 @@ body {
 }
 .hi {
     animation: intro1 0.8s ease-in-out;
+    font-family: "Dongle", sans-serif;
+   
+   
 }
 @keyframes intro1 {
     0% {
@@ -29,6 +32,7 @@ body {
 .name {
     margin-top: 50px;
     margin-left: 30px;
+    font-family: "Syne Mono", monospace;
     animation: intro2 1s ease-in-out;
 }
 @keyframes intro2 {
@@ -61,7 +65,6 @@ body {
     display: flex;
      justify-content: center;
     align-items: center;
-    /* flex-direction: column;  */
     height: 180px;
     width: 100%;
     background-color: rgb(0, 0, 0);
@@ -70,17 +73,52 @@ body {
     font-size: 30px;
     font-family: "Roboto Mono", monospace;
 }
+.askbox:hover {
+    background-image: radial-gradient(rgb(255, 225, 0), rgb(0, 0, 0));
+    color: #000000;
+}
+
+.askbox h3 {
+    animation-name: text;
+    animation-iteration-count: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+@keyframes text {
+    0% {
+        transform: translateX(0) translateY(-100%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+
+}
+   
     
 
 .you {
     margin: 50px;
     font-family: "Shojumaru", system-ui;
     font-size: 72PX;
+    color: rgb(21, 255, 0);
+    animation-name: text2;
+    animation-iteration-count: initial;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+@keyframes text2 {
+    0% {
+        transform: translateX(100%) translateY(100%);
+    }
+    100% {
+        transform: translateX(0) translateY(0);
+    }
+
 }
 .contaniner {
     height: 400px;
     width: auto;
-    background-color: rgb(215, 215, 226);
+    background-color: rgb(0, 0, 0);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -93,7 +131,8 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    background-color: rgb(255, 255, 255);
+   background-image: url(img/bgi-img.jpg);
+   background-size:cover;
     border-radius: 20px;
   
 }
@@ -101,13 +140,21 @@ body {
     background-color: rgb(0, 0, 0);
     width: 320px;
     height: 320px;
-   background-color: #000000fe;
+   background-color: #ffffff00;
     margin: 30px auto;
     justify-content: center;
-    color: #0088ff;
+    color: #ffffff;
     border-radius: 12px;
-    box-shadow: 5px 5px 15px rgb(255, 255, 255);
+    transition: all 0.3s;
+    opacity: 1;
+      box-shadow: 3px 3px 25px rgb(0, 0, 0), -3px -3px 25px rgb(0, 0, 0);
+    
 }
+.card:hover {
+    transform: scale(1.1);
+  
+}
+
 .card img {
     border-radius: 12px;
 }
@@ -116,7 +163,8 @@ body {
     margin-top: 10px;
 }
 .card p {
-    color: #15ff00;
+    font-family: "Dongle", sans-serif;
+    color: #ffffff;
     text-align: center;
     margin-top: 20px;
 }
@@ -126,11 +174,11 @@ body {
     width: auto;
     background-color: blue;
     display: flex;
-    margin-top: 20px;
     color: #ffffff;
     font-family: "Trade Winds", system-ui;
     
 }
+
 .about-box {
     padding: 20px;
     background-color: orangered;
@@ -138,15 +186,24 @@ body {
 .about-box p {
     margin-top: 30px;
     font-size: 19px;
+    font-family: "Dongle", sans-serif;
 }
-
+.about-box:hover {
+    background-color: rgb(255, 238, 0);
+    color: #000000;
+}
 .contact-box {
     padding: 20px;
     background-color: fuchsia;
 }
 .contact-box p {
+    font-family: "Dongle", sans-serif;
     margin-top: 30px;
     font-size: 19px;
+}
+.contact-box:hover {
+    background-color: #11ff00;
+    color: #000000;
 }
 .fotter {
     height: 100px;
