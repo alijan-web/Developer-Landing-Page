@@ -5,6 +5,7 @@
 body {
     background-image: url(img/developer.png);
     background-repeat: no-repeat;
+    width: 100%;
 }
 .introduction {
     color: #ffffff;
@@ -70,10 +71,6 @@ body {
     font-family: "Roboto Mono", monospace;
     overflow: hidden;
 }
-.askbox:hover {
-    background-image: radial-gradient(rgb(255, 225, 0), rgb(0, 0, 0));
-    color: #000000;
-}
 .askbox h3 {
     animation-name: text;
     animation-iteration-count: initial;
@@ -122,8 +119,10 @@ body {
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
-    background-image: url(img/bgi-img.jpg);
-    background-size:cover;
+    border: solid white 3px;
+    background-color: rgb(0, 0, 0);
+    /* background-image: url(img/bgi-img.jpg);
+    background-size:cover; */
     border-radius: 20px;
 }
 .card {
@@ -133,12 +132,13 @@ body {
     background-color: #ffffff00;
     margin: 30px auto;
     justify-content: center;
-    color: #ffffff;
+    color: #fcfcfc;
     border-radius: 12px;
     transition: all 0.3s;
     opacity: 1;
     box-shadow: 3px 3px 25px rgb(0, 0, 0), -3px -3px 25px rgb(0, 0, 0);
     cursor: pointer;
+    border: solid rgb(255, 255, 255) 3px;
 }
 .card:hover {
     transform: scale(1.1);
@@ -167,7 +167,7 @@ body {
 }
 .about-box {
     padding: 20px;
-    background-color: orangered;
+    background-color: rgb(0, 0, 0);
 }
 .about-box p {
     margin-top: 30px;
@@ -175,12 +175,12 @@ body {
     font-family: "Dongle", sans-serif;
 }
 .about-box:hover {
-    background-color: rgb(255, 238, 0);
-    color: #000000;
+    background-color:  #373434;
+    color: #ffffff;
 }
 .contact-box {
     padding: 20px;
-    background-color: fuchsia;
+    background-color: rgb(0, 0, 0);
 }
 .contact-box p {
     font-family: "Dongle", sans-serif;
@@ -188,8 +188,8 @@ body {
     font-size: 19px;
 }
 .contact-box:hover {
-    background-color: #11ff00;
-    color: #000000;
+    background-color: #373434;
+    color: #ffffff;
 }
 .fotter {
     height: 100px;
